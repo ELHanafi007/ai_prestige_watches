@@ -119,6 +119,54 @@ body.dark-theme {
   --border-color: hsl(0, 0%, 20%);
 }
 
+/* Our Brands Section */
+.brands {
+  padding: 2rem 0;
+  text-align: center;
+  background-color: #f9f9f9;
+}
+
+.brands__title {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 2rem;
+}
+
+.brands__container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 20px;
+}
+
+.brands__card {
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  text-align: center;
+}
+
+.brands__card:hover {
+  transform: translateY(-5px);
+}
+
+.brands__img {
+  object-fit: contain;
+  height: 200px;
+  width: 100%;
+}
+
+.brands__card:hover .brands__img {
+  transform: scale(1.05);
+}
+
+.brands__title {
+  font-size: 1.25rem;
+  color: #333;
+  margin-top: 1rem;
+}
+
 /*========== Button Dark/Light ==========*/
 .change-theme {
   color: var(--title-color);
@@ -149,6 +197,17 @@ body.dark-theme {
 
 .dark-theme::-webkit-scrollbar {
   background: hsl(0, 0%, 30%);
+}
+
+.dark-theme .brands {
+  background-color: var(--body-color);
+  color: var(--text-color);
+}
+
+@media (prefers-color-scheme: dark) {
+  h3.brands__title {
+    color: white;
+  }
 }
 
 /*=============== REUSABLE CSS CLASSES ===============*/
@@ -215,6 +274,9 @@ body.dark-theme {
 .nav__shop, 
 .nav__close {
   color: var(--title-color);
+}
+a.nav_bar {
+  color: black;
 }
 
 .nav__logo {
@@ -296,6 +358,26 @@ body.dark-theme {
 /* Active link */
 .active-link {
   color: var(--first-color);
+}
+
+/* Adding dark theme styles for the body and product section */
+body.dark-theme .product-section {
+  background-color: var(--body-color);
+  color: var(--text-color);
+}
+
+body.dark-theme .product-item {
+  background-color: var(--container-color);
+  color: var(--text-color);
+}
+
+body.dark-theme .product-item a.button {
+  background-color: var(--button-color);
+  color: var(--title-color);
+}
+
+body.dark-theme .product-item a.button:hover {
+  background-color: var(--button-color-alt);
 }
 
 /*=============== HOME ===============*/
@@ -461,6 +543,85 @@ body.dark-theme {
 
 .featured__card:hover .featured__price {
   margin-bottom: var(--mb-1-5);
+}
+
+
+/*=============== OUR TRUSTED BRANDS ===============*/
+.brands {
+  padding: 2rem 0;
+  text-align: center;
+  background-color: #f9f9f9;
+}
+
+.brands__title {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 2rem;
+}
+
+.brands__container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  row-gap: 2.5rem;
+}
+
+.brands__card {
+  position: relative;
+  text-align: center;
+  background-color: var(--container-color);
+  padding-top: 2rem;
+  border: 1px solid var(--border-color);
+  overflow-y: hidden;
+  transition: .3s;
+}
+
+.brands__card:hover {
+  box-shadow: 0 12px 32px hsla(0, 0%, 20%, .1);
+  padding: 2rem 0 3rem 0;
+}
+
+.brands__card:hover .brands__button {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.brands__card:hover .brands__title {
+  margin-bottom: var(--mb-1-5);
+}
+
+.brands__img {
+  height: 214px;
+  margin-bottom: var(--mb-1);
+  display: block;
+  margin: 0 auto;
+}
+
+.brands__title {
+  font-size: var(--h3-font-size);
+  font-weight: var(--font-bold);
+  text-transform: uppercase;
+  margin-bottom: var(--mb-0-75);
+  transition: .3s;
+}
+
+.brands__button {
+  font-size: var(--small-font-size);
+  transform: translateY(1rem);
+  opacity: 0;
+  transition: .3s;
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  background-color: #333;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.brands__button:hover {
+  background-color: #555;
 }
 
 /*=============== STORY ===============*/
@@ -1204,3 +1365,53 @@ body.dark-theme {
     right: 3rem;
   }
 }
+
+/*The Rolex Page settings*/
+/* Styles for the video background */
+#background-video {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -1;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.our-collection {
+  position: relative;
+  text-align: center;
+  color: #fff;
+  padding: 100px 0; /* Adjust as necessary */
+}
+
+.our-collection h2 {
+  position: relative;
+  z-index: 1;
+}
+
+.video-element {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+section.our-collection h2 {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: left;
+  color: #A37E2C; /* Set the desired gold color */
+  font-family: 'Roboto', sans-serif; /* Apply the new font */
+  font-size: 3em; /* Adjust font size as needed */
+}
+
+

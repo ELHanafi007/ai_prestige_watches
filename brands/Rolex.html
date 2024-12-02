@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Other meta tags and links -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap">
+
+  
+    
+
+    <!--=============== FAVICON ===============-->
+    <link rel="shortcut icon" href="../assets/img/rolex-favicon.png" type="image/x-icon">
+
+    <!--=============== BOXICONS ===============-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="../assets/css/swiper-bundle.min.css">
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="../assets/css/styles.css">
+
+    <style>
+        /* CSS for the products section with a luxurious and premium feel */
+        .product-section {
+            background-color: #f3f3f3;
+            padding: 60px 0;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin: 0 auto;
+            max-width: 1200px;
+        }
+
+        .product-item {
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .product-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .product-item img {
+            max-width: 100%;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .product-item h3 {
+            font-size: 1.5em;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .product-item p {
+            color: #666;
+            margin-bottom: 15px;
+        }
+
+        .our-collection {
+    width: 100%;
+    height: 800px;
+    display: grid;
+    place-items: center;
+    position: relative; /* Ensure the container has a position context for absolute positioning */
+    grid-template-columns: 1fr 1fr; /* Create two equal columns */
+}
+
+section.our-collection h2 {
+
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: left;
+    color: #A37E2C; /* Set the desired gold color */
+    font-size: 3em; /* Adjust font size as needed */
+}
+
+
+
+        
+
+        .product-item a.button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #000;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .product-item a.button:hover {
+            background-color: #333;
+        }
+    </style>
+
+    <title>Rolex - Luxury Watches</title>
+</head>
+
+<body>
+    <!--==================== HEADER ====================-->
+
+            <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav_bar">
+                <i class='bx bxs-watch nav__logo-icon'></i> Prestige Watches
+            </a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="../index.html" class="nav__link active-link">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">About Us</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#collections" class="nav__link">Collections</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link">Contact</a>
+                    </li>
+                </ul>
+
+                <div class="nav__close" id="nav-close">
+                    <i class='bx bx-x'></i>
+                </div>
+            </div>
+
+            <div class="nav__btns">
+                <!-- Theme change button -->
+                <i class='bx bx-moon change-theme' id="theme-button"></i>
+
+                <div class="nav__shop" id="cart-shop">
+                    <i class='bx bx-shopping-bag'></i>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-grid-alt'></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- New Section for "Our Collection" Heading -->
+    <section class="our-collection">
+        <video autoplay muted loop id="background-video">
+            <source src="../assets/img/Rolex/Rolex Submariner 2022 Black .mp4" type="video/mp4">
+    
+        </video>
+        <h2>Our Rolex Collection</h2>
+    </section>
+    
+
+    <!-- Product Section -->
+    <section class="product-section">
+        <div class="product-grid">
+            <div class="product-item">
+                <img src="../assets/img/Rolex/1-w70x429knb132x17edf24c63-Main_2x.webp" alt="Product 1">
+                <h3>Rolex</h3>
+                <p>Submariner</p>
+                <p>$10,000</p>
+                <a href="../Shwood-Shop/product.html" class="button">View More Details</a>
+            </div>
+            <div class="product-item">
+                <img src="../assets/img/Rolex/2-y181jdh67kx2lripaucfting-Main_2x.webp" alt="Product 2">
+                <h3>Rolex</h3>
+                <p>Oryel</p>
+                <p>$12,000</p>
+                <a href="#" class="button">View More Details</a>
+            </div>
+            <div class="product-item">
+                <img src="../assets/img/Rolex/3-oxbyqsr0pt5y84g8sexacrfl-Main_2x.webp" alt="Product 3">
+                <h3>Rolex</h3>
+                <p>PePsi</p>
+                <p>$15,000</p>
+                <a href="#" class="button">View More Details</a>
+            </div>
+            <div class="product-item">
+                <img src="../assets/img/Rolex/47-v5b06z1h6pcvqe8xu0e9h2pg-Main_2x.webp" alt="Product 4">
+                <h3>Rolex</h3>
+                <p>DAte-Just</p>
+                <p>$18,000</p>
+                <a href="#" class="button">View More Details</a>
+            </div>
+            <div class="product-item">
+                <img src="../assets/img/Rolex/49-5os8cromlu1m5otpcim3xb2w-Main_2x.webp" alt="Product 5">
+                <h3>Rolex</h3>
+                <p>Batman</p>
+                <p>$20,000</p>
+                <a href="#" class="button">View More Details</a>
+            </div>
+            <div class="product-item">
+                <img src="../assets/img/Rolex/54-83a5t6w7ocqe7bm8y9kigmt3-Main_2x.webp" alt="Product 6">
+                <h3>Rolex</h3>
+                <p>Oyster Milgaus</p>
+                <p>$22,000</p>
+                <a href="#" class="button">View More Details</a>
+            </div>
+            <div class="product-item">
+                <img src="../assets/img/Rolex/59-64dbjwtbd3y6580vuf2h85z0-Main_2x.webp" alt="Product 7">
+                <h3>Rolex</h3>
+                <p>Yacht-master II</p>
+                <p>$25,000</p>
+                <a href="#" class="button">View More Details</a>
+            </div>
+            <div class="product-item">
+                <img src="../assets/img/Rolex/55-vb2javyk3a8rlddxgy6lkr33-Main_2x.webp" alt="Product 8">
+                <h3>Rolex</h3>
+                <p>Oyster Perpetual</p>
+                <p>$28,000</p>
+                <a href="#" class="button">View More Details</a>
+            </div>
+        </div>
+    </section>
+    <!-- Footer Section -->
+    <footer class="footer section">
+        <div class="footer__container container grid">
+            <div class="footer__content">
+                <h3 class="footer__title">Our Information</h3>
+                <ul class="footer__list">
+                    <li>Rabat, Morocco</li>
+                    <li>Rabat</li>
+                    <li>+123-456-7890</li>
+                </ul>
+            </div>
+
+            <div class="footer__content">
+                <h3 class="footer__title">About Us</h3>
+                <ul class="footer__links">
+                    <li>
+                        <a href="#" class="footer__link">Support Center</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link">Customer Support</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link">About Us</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link">Privacy Policy</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__content">
+                <h3 class="footer__title">Products</h3>
+                <ul class="footer__links">
+                    <li>
+                        <a href="#" class="footer__link">Luxury Watches</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link">New Arrivals</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link">Best Sellers</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link">Accessories</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer__content">
+                <h3 class="footer__title">Follow Us</h3>
+                <ul class="footer__social">
+                    <a href="https://www.facebook.com/prestigewatches" target="_blank" class="footer__social-link">
+                        <i class='bx bxl-facebook'></i>
+                    </a>
+                    <a href="https://twitter.com/prestigewatches" target="_blank" class="footer__social-link">
+                        <i class='bx bxl-twitter'></i>
+                    </a>
+                    <a href="https://www.instagram.com/prestigewatches" target="_blank" class="footer__social-link">
+                        <i class='bx bxl-instagram'></i>
+                    </a>
+                </ul>
+            </div>
+        </div>
+
+        <span class="footer__copy">&#169; 2024 Prestige Watches. All rights reserved</span>
+    </footer>
+
+    <!--=============== SCROLL UP ===============-->
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class='bx bx-up-arrow-alt scrollup__icon'></i>
+    </a>
+
+    <!--=============== SWIPER JS ===============-->
+    <script src="../assets/js/swiper-bundle.min.js"></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="../assets/js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--=============== FAVICON ===============-->
+    <link rel="shortcut icon" href="../assets/img/favicon.png" type="image/x-icon">
+
+    <!--=============== BOXICONS ===============-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="../assets/css/swiper-bundle.min.css">
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="../assets/css/styles.css">
+
+    <title>Rolex Product Page - Prestige Watches</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: #f5f5f5;
+            color: #333;
+        }
+
+        .header {
+            background: #000;
+            color: #fff;
+            padding: 20px 0;
+        }
+
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .nav__list {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav__link {
+            text-decoration: none;
+            color: #fff;
+            font-weight: 500;
+        }
+
+        .nav__logo {
+            font-size: 24px;
+            color: #fff;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">
+                <i class='bx bxs-watch nav__logo-icon'></i> Prestige Watches
+            </a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">About Us</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#products" class="nav__link">Products</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link">Contact</a>
+                    </li>
+                </ul>
+
+                <div class="nav__close" id="nav-close">
+                    <i class='bx bx-x'></i>
+                </div>
+            </div>
+
+            <div class="nav__btns">
+                <!-- Theme change button -->
+                <i class='bx bx-moon change-theme' id="theme-button"></i>
+
+                <div class="nav__shop" id="cart-shop">
+                    <i class='bx bx-shopping-bag'></i>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-grid-alt'></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!--==================== MAIN CONTENT ====================-->
+    <div class="container">
+        <div class="card">
+            <div class="card-head">
+                <img src="../assets/img/Rolex/28122-4-rolex-logo.png" alt="Rolex Logo" class="card-logo">
+                <img src="../assets/img/Rolex/m126618lb-0002.avif" alt="Rolex Submariner" class="product-img">
+                <div class="product-detail">
+                    <h2>Rolex Submariner</h2>
+                    Discover unparalleled luxury and precision with the Rolex Submariner, crafted for those who demand the best.
+                </div>
+                <span class="back-text">ROLEX</span>
+            </div>
+            <div class="card-body">
+                <div class="product-desc">
+                    <span class="product-title">
+                        Rolex Submariner
+                        <span class="badge">New</span>
+                    </span>
+                    <span class="product-caption">Luxury Watch Collection</span>
+                    <span class="product-rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star grey"></i>
+                    </span>
+                </div>
+                <div class="product-properties">
+                    <span class="product-size">
+                        <h4>Size</h4>
+                        <ul class="ul-size">
+                            <li><a href="#">40mm</a></li>
+                            <li><a href="#">41mm</a></li>
+                        </ul>
+                    </span>
+                    <span class="product-color">
+                        <h4>Colour</h4>
+                        <ul class="ul-color">
+                            <li><a href="#" class="gold active"></a></li>
+                            <li><a href="#" class="silver"></a></li>
+                        </ul>
+                    </span>
+                    <span class="product-price">
+                        USD<b>12,000</b>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+     <!--==================== FOOTER ====================-->
+     <footer class="footer section">
+        <div class="footer__container container grid">
+            <div class="footer__content">
+                <h3 class="footer__title">Our Information</h3>
+                <ul class="footer__list">
+                    <li>Rabat, Morocco</li>
+                    <li>Rabat</li>
+                    <li>+123-456-7890</li>
+                </ul>
+            </div>
+
+            <div class="footer__content">
+                <h3 class="footer__title">About Us</h3>
+                <ul class="footer__links">
+                    <li>
+                        <a href="#" class="footer__link">Support Center</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link">Customer Support</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link">About Us</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link">Privacy Policy</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer__content">
+                <h3 class="footer__title">Products</h3>
+                <ul class="footer__links">
+                    <li>
+                        <a href="#" class="footer__link">Luxury Watches</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link">New Arrivals</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link">Best Sellers</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link">Accessories</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer__content">
+                <h3 class="footer__title">Follow Us</h3>
+                <ul class="footer__social">
+                    <a href="https://www.facebook.com/prestigewatches" target="_blank" class="footer__social-link">
+                        <i class='bx bxl-facebook'></i>
+                    </a>
+                    <a href="https://twitter.com/prestigewatches" target="_blank" class="footer__social-link">
+                        <i class='bx bxl-twitter'></i>
+                    </a>
+                    <a href="https://www.instagram.com/prestigewatches" target="_blank" class="footer__social-link">
+                        <i class='bx bxl-instagram'></i>
+                    </a>
+                </ul>
+            </div>
+        </div>
+
+        <span class="footer__copy">&#169; 2024 Prestige Watches. All rights reserved</span>
+    </footer>
+    <!--=============== SCROLL UP ===============-->
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class='bx bx-up-arrow-alt scrollup__icon'></i>
+    </a>
+
+    <!--=============== SWIPER JS ===============-->
+    <script src="../assets/js/swiper-bundle.min.js"></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="../assets/js/main.js"></script>
+</body>
+
+</html>
